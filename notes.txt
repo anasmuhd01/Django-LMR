@@ -1,0 +1,27 @@
+Django-----------------
+
+its python based open source web development 
+written in python
+latest version 6.0.4
+its web framework developed specifically for server side development
+
+--> Features:
+
+1.Adimin Interface: it automatically generates a professional,
+                    ready-to-use administrative dashboard to 
+                    manage your applicatons data once models 
+                    are defined
+
+2.Authentication :  A robust built in system to handle user accounts, permissions and groups
+3.Security :
+4.Scalability : designed to handle heavy traffic and complex data volumes,it is used by major platforms like 
+instagram, pinterst and disqus
+5.MVT Architecture
+6.ORM[object relational mapping] support: allows develpers to interact with databases using python classes instead of raw SQL, supporting
+ PostgreSQL,MySQL,SQLite and MariaDB
+7.Rapid development : designed to take applicatons from concept to completion as fast as possible
+8.Template Engine - jinja 2 : used to generate dynamic content by seperating an applications design(presentaion layer) from 
+its python code(bussiness logic). it is a core component of Django's Model template view
+9.REST api - Django Rest framework : powerfull and flexible toolkit built on top of django for building web apis
+10.Asynchronous Support : includes async view and middleware to handle concurrent interactions efficiently, ideal for real-time
+applications
