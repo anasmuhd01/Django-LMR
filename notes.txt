@@ -25,3 +25,52 @@ its python code(bussiness logic). it is a core component of Django's Model templ
 9.REST api - Django Rest framework : powerfull and flexible toolkit built on top of django for building web apis
 10.Asynchronous Support : includes async view and middleware to handle concurrent interactions efficiently, ideal for real-time
 applications
+
+
+Environmental  Setup & Project creation:
+
+    Django env requirements:
+        python
+        django
+        vitual environment -: pip install virtualenv(to install in local env)
+        to create in system env (py -m pip install virtualen)
+
+Project creation: 
+    create a folder
+    open cmd in folders's path
+    create virtualenv -> venv <env-name>
+    activate created environment: <env-name>/Scripts/activate
+    install 3rd party packages: pip install Django
+    create django project: django-admin startproject <project-name>
+    now, you can run Django project: py manage.py runserver
+
+
+Project Directory:
+    demo
+        >>demo : project Directory
+            __init__.py : initialization module
+            asgi.py : asynchronous server gateway Interface
+            settings.py : project configuration flexible
+            urls.py : root url module of entire project
+            wsgi.py : web server gateway Interface
+        manage.py : command line utility file
+        db.sqlite3 : django project's default database[SQlite ] file based on default configuration 
+
+Django application:
+    * django application is generally a component which helps developers to code, manage and contain
+      clean structure for project
+    * basically used for modularise entire project 
+    * it will contain necessary modules for fullfilling an entire feature in development 
+    * there are built in apps such as admin,auth,session,messges etc
+    * we can create a django app using command, py manage.py startapp <app_name>
+        --> add app to installed app in settings.py
+
+>demo
+    ->demo
+    ->project1:
+        __init__.py : initialization file of a python Directory
+        admin.py : file for configuring app models into admin panel
+        apps.py: app config file
+        models.py: file used to define models in app
+        tests.py: used for unit testing
+        views.py: file for controll logic programming
