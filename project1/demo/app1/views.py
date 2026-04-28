@@ -29,3 +29,6 @@ def worksView(req):
     # ]
     works=[]
     return render(req,"works.html",{"u_name":username,"sevice_list":services,"works":works})
+
+def addWorksView(req):
+    return render(req,"addworks.html")

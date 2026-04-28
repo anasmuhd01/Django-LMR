@@ -24,5 +24,6 @@ urlpatterns = [
     path('second',secondReq),
     path('home',homeView),
     path('about',aboutView),
-    path('works',worksView)
+    path('works',worksView),
+    path('addworkview',addWorksView)
 ]

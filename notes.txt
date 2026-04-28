@@ -74,3 +74,43 @@ Django application:
         models.py: file used to define models in app
         tests.py: used for unit testing
         views.py: file for controll logic programming
+
+
+view functions:
+ functions that defined for bussiness logic implementation
+ defines how a request should be handled and provides responce
+ each request handled with indivitual view functions
+ return value of a view function act as responce for a request
+
+ def viewFunction(request, * args, **kwargs):
+    bussiness logic_block
+    return responce_object
+
+template rendering:
+    template can be provided as a responce using render() mehtod in django
+
+def exampleView(request):
+    return render(request,"template_name.html")
+
+=context[data to template] is passed through render
+
+def exampleView(request):
+    data='val'
+    return render(request,"template_name.html",{"key":data})
+
+Django template launguage:=>
+    launguage system in django for template side Scripting /logic
+    -> string interplation: to show string values in UI passes as context 
+
+    views.py=>
+
+    def exampleView(request):
+        data='val'
+        return render(request,"template_name.html",{"key":data})
+
+    template_name.html=>
+    <body>
+        <h1>
+        {{key}}
+        </h1>
+    </body>
