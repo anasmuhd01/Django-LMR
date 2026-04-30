@@ -25,6 +25,5 @@ urlpatterns = [
     path('home',homeView),
     path('about',aboutView),
     path('works',worksView),
-    path('addworkview',addWorksView),
-    path('submit',submitresponceView)
+    path('addworkview',addWorksView)
 ]

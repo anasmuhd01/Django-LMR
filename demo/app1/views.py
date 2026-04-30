@@ -23,12 +23,12 @@ def worksView(req):
     #     {"id":1,"title":"Ecommerce app","client":"Amal","price":1200},
     #     {"id":2,"title":"School Mng Ststem","client":"Vinu","price":1500},
     #     {"id":3,"title":"Inventory Management","client":"Amal","price":2200},
-     # ]
+
+
+
+    # ]
     works=[]
     return render(req,"works.html",{"u_name":username,"sevice_list":services,"works":works})
 
 def addWorksView(req):
     return render(req,"addworks.html")
-
-def submitresponceView(req):
-    return HttpResponse("FORM SUBMISSION SUCCESSFULL !")
