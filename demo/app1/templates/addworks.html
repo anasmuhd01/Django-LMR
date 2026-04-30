@@ -19,7 +19,8 @@
     <h1>Add work details</h1>
     <div class="container-fluid d-flex justify-content-center">
         <div class="w-50 border shadow bg-light p-3">
-            <form action="">
+            <form action="/submit" method="post">
+                {% csrf_token %}
                 <label for="">Title</label>
                 <input type="text" class="form-control mb-3" name="title">
                 <label for="">Client</label>
