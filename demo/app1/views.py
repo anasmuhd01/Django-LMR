@@ -44,3 +44,14 @@ def addWorksView(req):
 #     price=req.POST.get('price')
 
 #     return HttpResponse(f"title: {title}  name:{name} price: {price}")
+
+def addEmployeeView(req):
+    if req.method == "GET":
+        return render(req,"addemployee.html")
+    elif req.method == "POST":
+
+        name = req.POST.get('empname')
+        age = req.POST.get('empage')
+        qal = req.POST.get('empqal')
+        place = req.POST.get('empplace')
+        return HttpResponse("REQ HIT")
